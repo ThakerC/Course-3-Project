@@ -15,30 +15,30 @@ This project is about creating two tidy datasets from a source dataset prepared 
 
 Operation of run analysis.R:
 
-1.  # Download source file for the project
-2.  # unzip the file in dir  "../HAR"
-3.  # Read all six activity lables 
-4.  # Read all features lables, these will be the column names or 561 variables both for test and train datasets
-5.  # Read volunteer_ID or subject, there are total 30 subjects in this project
-6.  # Read 'test' dataset
-7.  # Read activities from Y_test, logically total number of observations must be equal to number of rows in the test dataset. 
-8.  # Assign activity lable to each observation  for eg. 1=WALKING, 3=WALKING_DOWNSTAIRS and so on.
-9.  # Include 6 activities decriptive names against each row/observation to main test dataset. 
-10. # Repat step 5 to 9 for train dataset
+1.  Download source file for the project
+2.  Unzip the file in dir  "../HAR"
+3.  Read all six activity lables 
+4.  Read all features lables, these will be the column names or 561 variables both for test and train datasets
+5.  Read volunteer_ID or subject, there are total 30 subjects in this project
+6.  Read 'test' dataset
+7.  Read activities from Y_test, logically total number of observations must be equal to number of rows in the test dataset. 
+8.  Assign activity lable to each observation  for eg. 1=WALKING, 3=WALKING_DOWNSTAIRS and so on.
+9.  Include 6 activities decriptive names against each row/observation to main test dataset. 
+10. Repat step 5 to 9 for train dataset
 
-11. # 3. Use descriptive activity names to name the activities in the data set
+11. Use descriptive activity names to name the activities in the data set
 
-12. # 1. Merging two datasets in a single dataset
+12. Merging two datasets in a single dataset
 
-13. # 2. Extract only the measurements on the mean and standard deviation for each measurement.
+13. Extract only the measurements on the mean and standard deviation for each measurement.
 
-14. dataset 'mean_and_std_deviation_dataset' is created
+14. Dataset 'mean_and_std_deviation_dataset' is created
 
-15. # 4. Appropriately label the data set with descriptive variable names. 
+15. Appropriately label the data set with descriptive variable names. 
 
-16. # 5. From the data set in step 14 and 15, create a second, independent tidy data set with the average of each variable for each activity and each subject.
+16. From the data set in step 14 and 15, create a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-17. tidy dataframe 'avg_of_each_activities_per_subject' is created. 
+17. Tidy dataframe 'avg_of_each_activities_per_subject' is created. 
 
 18. Output both datasets as txt and csv file format for further analysis
 
@@ -103,16 +103,9 @@ Variables: Total 68 variables
 
 Rest 66 variable syntax is as given below:
 
-(time/freq)_(body/gravity)_(jerk/”blank”)_(magnitude/”blank”)_(std/mean)_(X-axis/Y-axis/Z-axis/”blank”)
-
-
 Please refer below syntax definition:
 
-	      Domain		  motion.by	    motion.type	    motion.subtype		  magnitude?	  Type of measure			        Axis?
-type_1	Frequency	  _body_		    _linear_	      _jerk_			        _mag_		      _std_ (standard deviation)	X-axis
-type_2	Time		    _gravity_	    _angular_ 	 				                              _mean_(mean)			          Y-axis
-type_3	 	 	 	 	 											                                                                          Z-axis
-	 	 					                                    non jerk(omitted)	 	 					rest(omitted)
+(time/freq)_ (body/gravity)_ (jerk/”blank”)_ (magnitude/”blank”)_ (std/mean)_ (X-axis/Y-axis/Z-axis/”blank”)
 
 Unit: all 66 varibles has numerical value
 
