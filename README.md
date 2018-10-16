@@ -107,7 +107,7 @@ Please refer below syntax definition:
 
 (time/freq)_ (body/gravity)_ (jerk/”blank”)_ (magnitude/”blank”)_ (std/mean)_ (X-axis/Y-axis/Z-axis/”blank”)
 
-Unit: all 66 varibles has numerical value
+Unit: all 66 variables has numerical value
 
 For eg: 
 time_body_linear_acceleration_std_X-axis 
